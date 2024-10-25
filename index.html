@@ -6,16 +6,44 @@
     <img src="assets\Images\mi_foto Cv Gianluca.jpg" alt="Foto de Gianluca" width="150" style="border-radius: 50%;">
     <title>Currículum - Gianluca Foradori</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
    
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">CV 2024</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#perfil">Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experiencia">Experiencia Laboral</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formacion-academica">Formación Académica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#idiomas">Idiomas</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
 
     <div class="container">
         <h1>Currículum Vitae</h1>
         <h2>Gianluca Foradori</h2>
  
  <div class="section">
-    <h2>Resumen Profesional</h2>
+    <div id="perfil" class="nav-link">
+    <h2>Sobre mi</h2>
     <p>
         Soy un profesional con experiencia en ingenieria comercial y nutricion, con habilidades en contabilidad, armado de prescripcion dietetica, coaching y planes de alimentacion. 
         Me especializo en nutricion deportiva, y estoy comprometido con la mejora continua de labor, el trabajo en equipo.
@@ -32,35 +60,63 @@
         </div>
 
         <div class="section">
-            <h2>Experiencia laboral</h2>
-            <ul>
-                <li><strong>Vendedor Hush puppies</strong> en Hush puppies - 20/04/2015 a 10/12/2015</li>
-                <p>Abrir caja y cerrarla terminada la jornada, vender productos y convencer a los clientes con un buen trato, dejar limpio.</p>
-            </ul>
+            <div id="experiencia" class="nav-link"></div>
+            <section id="experiencia-laboral">
+                <h2>Experiencia Laboral</h2>
+                <ul>
+                    <li>
+                        <strong>Nutricionista ayudante gimnasio universitario</strong>
+                        <p>Ayudaba a las mediciones de pacientes y el cuidado de los deportistas en el gimnasio de la universidad.</p>
+                    </li>
+                    <li>
+                        <strong>Tienda hush puppies apumanque</strong> - <em>Vendedor</em>
+                        <p>Vendedor de productos, ordenar tienda, abrir y cerrar caja, dejar limpio y ordenado más un buen trato a los clientes.</p>
+                    </li>
+                    <li>
+                        <strong>Personal trainer con educacion nutricional en grupos o pacientes individuales</strong>
+                        <p>Entrenar y educar personas para que logren sus metas y objetivos con enseñanza en alimentacion para que puedan seguir una vida sana sin problemas.</p>
+                    </li>
+                </ul>
+            </section>
+            
         </div>
 
         <div class="section">
-            <h2>Educación</h2>
+            <div id="formacion-academica" class="nav-link"></div>
+            <h2>Formacion-academica</h2>
             <ul>
                 <li><strong>Colegio y universitario</strong> en Colegio Cumbres - 2014 y Universidad de los andes 2024</li>
             </ul>
         </div>
-
         <div class="section">
+            <div id="habilidades" class="nav-link"></div>
             <h2>Habilidades</h2>
             <div class="skills">
                 <ol>
                     <li>HTML</li>
                     <li>CSS</li>
-                
-                
+                    <li>Isakmetric nivel 1</li>
+                    <li>Certificado en excel</li>
                     <li>JavaScript</li>
                     <li>Python</li>
                 </ol>
-            <h2>Redes Sociales</h2>
-            <ul>
+        <div class="section">
+            <div id="idiomas" class="nav-link"></div>
+            <h3>Idiomas</h3>
+            <div class="Idioms">
+                <ol>
+                    <li>Español</li>
+                    <li>Ingles</li>
+                    <li>Italiano</li>
+                   
+                </ol>
+        
+        <div class="section">
+            <h4>Redes Sociales</h4>
+            <div class="Social">
+                <ol>
                 <li> <a href="https://www.instagram.com/gianluca_foradori/">Instagram</a> </a></li>
-                </ul>
+            </ol>
             </div>
         </div>
     </div>
@@ -68,6 +124,9 @@
     <h2>Portafolio</h2>
     <p>Visita mi <a href="portafolio/portafolio.html">Portafolio</a> para ver mis proyectos.</p>
 </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <footer>
         <p>Curriculum Gianluca 2024, todos los derechos reservados.</p>
