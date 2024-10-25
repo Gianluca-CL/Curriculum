@@ -1,22 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gianluca Foradori</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Currículum Vitae - Gianluca Foradori</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            font-size: 0.7rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 4rem;
+            background-color: #4a4a4a;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            height: 3rem;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 80px auto; /* Added margin for fixed header */
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4a90e2;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+
+
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skill {
+            background: #eaeaea;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px;
+            flex: 1 1 calc(25% - 10px);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .skill .percentage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+            font-size: 1.2em;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .skill:hover .percentage {
+            opacity: 1;
+        }
+        .project {
+            background: #eaeaea;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-    </nav>
+
+<header>
     <h1>Gianluca Foradori</h1>
+    <a href="#inicio">inicio</a>
+    <a href="#skills">Habilidades</a>
+    <a href="#proyectos">portfolio</a>
+    <a href="#contacto">contacto</a>
+</header>
+
+<div id="inicio" class="container">
+    <section>
+        <h2>Sobre Mí</h2>
+        <p> Nutricionista con experiencia en diversas áreas como la salud pública, consultoría, educación y bienestar corporativo.
+            He trabajado en importantes instituciones y empresas del sector alimentario y de salud.
+            Formación académica en la Universidad de los Andes.
+    
+            Certifcacion excel.
+            Dominio avanzado del idioma inglés, tanto escrito como hablado.</p>
+    </section>
 
     <section>
-        <h3>Educación</h3>
+        <h2>Habilidades</h2>
+        <div id="skills" class="skills">
+            <div class="skill">JavaScript
+                <div class="percentage">90%</div>
+            </div>
+            <div class="skill">Node.js
+                <div class="percentage">85%</div>
+            </div>
+            <div class="skill">HTML & CSS
+                <div class="percentage">95%</div>
+            </div>
+            <div class="skill">MongoDB
+                <div class="percentage">80%</div>
+            </div>
+            <div class="skill">React
+                <div class="percentage">75%</div>
+            </div>
+            <div class="skill">Git
+                <div class="percentage">70%</div>
+            </div>
+        </div>
     </section>
-    <footer>
-        <p>Gianluca Foradori 2024 Todo los derechos  reservados</p>
 
-    </footer>
+    <section>
+        <h2>Proyectos</h2>
+        <div id="proyectos" class="projects">
+            <div class="project">
+                <h3>Proyecto 1</h3>
+                <img src="assets/Images/card-1.jpg" alt="Proyecto 1">
+                <p> Medicion Isak nivel 2 a nivel personalizado, al adoptar un enfoque estandarizado y sistemático en la evaluación antropométrica
+                    ,ISAK 2 permite la comparación y la interpretación de datos de manera consistente y confiable.
+                     Esto es especialmente importante en entornos donde se realizan mediciones en múltiples ocasiones o por diferentes evaluadores.</p>
+                <a href="https://example.com" target="_blank">Ver Proyecto</a>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2</h3>
+                <img src="https://via.placeholder.com/300x200" alt="Proyecto 2">
+                <p>  Gianluca me hizo una pauta individual, con medidas y a base de mis objetivos
+                    tambien me ofrecio un plan personalizado estilo personal trainer para ayudarme a
+                    no salirme y llegar a mis objetivos</p>
+                <a href="https://example.com" target="_blank">Ver Proyecto</a>
+            </div>
+            <div class="project">
+                <h3>Proyecto 3</h3>
+                <img src="https://via.placeholder.com/300x200" alt="Proyecto 3">
+                <p>Forme un grupo personalizado para entrenar y enseñarles acerca de la alimentacion,
+                    tomandoles las medidas tambien y haciendo clases grupales para que lograran sus objetivos.</p>
+                <a href="https://example.com" target="_blank">Ver Proyecto</a>
+            </div>
+            
+        </div>
+    </section>
+    <section>
+        <h2>Proyectos</h2>
+        <div id="contacto" class="contacto">
+            <div class="card">
+                <h3>Contacto</h3>
+                <p href="mailto:Foramontjr@gmail.com">Foramontjr@gmail.com</p>
+                <p href="tel:+56999290394">+56 999 290 394</p>
+                <p href="https://www.linkedin.com/in/gianluca-foradori-404446145/" target="_blank">linkedin.com/in/gianluca-foradori</p>
+                <p href="https://github.com/gianluca_foradori" target="_blank">github.com/gianluca_foradori</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>© 2024 Gianluca Foradori. Todos los derechos reservados.</p>
+</footer>
+
 </body>
 </html>
