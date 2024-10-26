@@ -1,7 +1,7 @@
 # Welcome to My Portafolio
 
 ## 🔗 Links
-- [Curriculum](https://github.com/Gianluca-CL/Curriculum) 
+- [Curriculum](https://gianluca-cl.github.io/Curriculum/) 
 - [Forks Task's](#)
 
    - **Fork 1**: [Maximiliano Project](https://github.com/Gianluca-CL/Curr-culum)
